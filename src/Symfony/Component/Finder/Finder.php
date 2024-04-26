@@ -323,6 +323,11 @@ class Finder implements \IteratorAggregate, \Countable
      *
      *     $finder->in(__DIR__)->exclude('ruby');
      *
+     * By prefixing a directory with `/`, the exclusion is applied only to the root of the search path:
+     *
+     *     $finder->in(__DIR__)->exclude('/ruby');    // excludes only __DIR__/ruby
+     *     $finder->in(__DIR__)->exclude('/foo/bar'); // excludes only __DIR__/foo/bar
+     *
      * @param string|array $dirs A directory path or an array of directories
      *
      * @return $this

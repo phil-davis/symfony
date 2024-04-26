@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+8.1
+---
+
+ * Add support for root-relative excludes in `Finder::exclude()` by prefixing paths with `/`
+
 6.4
 ---
 
